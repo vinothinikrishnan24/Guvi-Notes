@@ -179,7 +179,7 @@ function NoteCard({ note, togglePin, archiveNote, trashNote, setNoteToEdit, rest
 
       {/* Modal for Viewing Note Details */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-2 sm:px-0">
+        <div className="fixed inset-0 bg-[#ffa4a480] bg-opacity-50 flex items-center justify-center z-50 px-2 sm:px-0">
           <div className="bg-light p-4 sm:p-6 rounded-xl w-[90vw] max-w-md shadow-xl">
             <h2 className="font-note-title text-dark text-lg sm:text-xl mb-2">{note.title}</h2>
             <p className="font-body text-dark mb-4 text-sm sm:text-base">{note.description}</p>
