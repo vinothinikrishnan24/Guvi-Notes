@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #F9FAFB; /* Light background */
+  color: #000000; /* Black text for light background */
+}
+
+/* Custom Animations for Buttons */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+}
+
+/* Utility classes for animations */
+.pulse:hover { animation: pulse 0.5s ease-in-out infinite; }
+.bounce:hover { animation: bounce 0.5s ease-in-out infinite; }
+.shake:hover { animation: shake 0.5s ease-in-out infinite; }
+
+/* Font Classes */
+.font-title {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #FFFFFF; /* White text for dark navbar */
+}
+
+.font-nav-button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.font-note-title {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+.font-body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.font-tag {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.font-button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+}
+
+.font-heading {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.font-form {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Custom Colors */
+.bg-dark {
+  background-color: #1F2A44; /* Dark background */
+}
+
+.bg-light {
+  background-color: #F9FAFB; /* Light background */
+}
+
+.text-dark {
+  color: #000000; /* Black text */
+}
+
+.text-light {
+  color: #FFFFFF; /* White text */
+}
+
+.bg-primary {
+  background-color: #EF4444; /* Red primary */
+}
+
+.bg-primary-hover {
+  background-color: #DC2626; /* Darker red on hover */
+}
+
+.bg-secondary {
+  background-color: #6B7280; /* Gray secondary */
+}
+
+.bg-secondary-hover {
+  background-color: #4B5563; /* Darker gray on hover */
+}
+
+.border-primary {
+  border-color: #EF4444;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 640px) {
+  .font-title { font-size: 1.5rem; }
+  .font-nav-button { font-size: 0.875rem; }
+  .font-note-title { font-size: 1.125rem; }
+  .font-body { font-size: 0.9375rem; }
+  .font-tag { font-size: 0.8125rem; }
+  .font-button { font-size: 0.8125rem; }
+  .font-heading { font-size: 1.25rem; }
+}
+
+@media (min-width: 1024px) {
+  .font-title { font-size: 2rem; }
+  .font-heading { font-size: 1.75rem; }
+}
